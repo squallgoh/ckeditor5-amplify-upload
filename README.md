@@ -14,7 +14,7 @@ Then run the following commands from the directory:
 
 ```
 npm install
-npm install ckeditor5-amplify-upload
+npm i @squallgoh/ckeditor5-amplify-upload
 ```
 
 Add this plugin and remove the ckfinder and easyimage plugins in ckeditor.js
@@ -29,7 +29,7 @@ import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 //import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 //import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
-import AmplifyUpload from 'ckeditor5-amplify-upload/src/AmplifyUpload'
+import AmplifyUpload from '@squallgoh/ckeditor5-amplify-upload/src/AmplifyUpload';
 
 // ...
 

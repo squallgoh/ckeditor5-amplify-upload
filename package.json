@@ -1,5 +1,5 @@
 {
-  "name": "ckeditor5-amplify-upload",
+  "name": "@squallgoh/ckeditor5-amplify-upload",
   "version": "0.0.1",
   "description": "CKEditor5 plugin for upload from AWS Amplify to AWS S3",
   "keywords": [
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/squallgoh/ckeditor5-amplify-upload.git"
+    "url": "git+https://github.com/squallgoh/ckeditor5-amplify-upload.git"
   },
   "files": [
     "src",
@@ -25,5 +25,13 @@
   },
   "devDependencies": {
     "@ckeditor/ckeditor5-editor-classic": ">=12.1.3"
+  },
+  "bugs": {
+    "url": "https://github.com/squallgoh/ckeditor5-amplify-upload/issues"
+  },
+  "homepage": "https://github.com/squallgoh/ckeditor5-amplify-upload#readme",
+  "main": "AmplifyUpload.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
