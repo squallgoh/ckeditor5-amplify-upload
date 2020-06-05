@@ -14,6 +14,7 @@ export default class AmplifyUpload extends Plugin {
 
   init() {
     const storage = this.editor.config.get("AmplifyUpload.storage");
+    const namePrefix = this.editor.config.get("AmplifyUpload.namePrefix");
 
     if (!storage) {
       console.warn(
@@ -22,7 +23,7 @@ export default class AmplifyUpload extends Plugin {
       return;
     }
 
-    this.editor.plugins.get("FileRepository").createUploadAdapter = loader =>
-      new Adapter(loader, storage, this.editor.t);
+    this.editor.plugins.get("FileRepository").createUploadAdapter = (loader) =>
+      new Adapter(loader, storage, namePrefix, this.editor.t);
   }
 }
